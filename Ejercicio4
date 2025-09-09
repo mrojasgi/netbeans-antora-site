@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+
+        // Pedir la edad de Juan
+        System.out.print("Ingrese la edad de Juan: ");
+        int juan = entrada.nextInt();
+
+        // Calcular las edades
+        double alberto = (2.0 / 3.0) * juan;
+        double ana = (4.0 / 3.0) * juan;
+        double mama = juan + alberto + ana;
+
+        // Mostrar resultados
+        System.out.println("\n--- Resultado ---");
+        System.out.println("Edad de Juan: " + juan);
+        System.out.println("Edad de Alberto: " + alberto);
+        System.out.println("Edad de Ana: " + ana);
+        System.out.println("Edad de la mamá: " + mama);
+    }
+}
